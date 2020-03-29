@@ -1,0 +1,16 @@
+### C++ ###
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+### macOS ###
+*.DS_Store
+
+# File names #
+Server/__pycache__/
+Client/__pycache__/
