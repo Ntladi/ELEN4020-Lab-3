@@ -6,10 +6,13 @@ import stop_words
 wordRe = re.compile(r"[\w']+")
 stopWords = stop_words.get_stop_words()
 
+def hasNumbers(word):
+	return bool(re.search(r'\d', inputString))
+
 class Word_Count(mrs.MapReduce):
 	def map(self,lineNumber,text):
 		for word in wordRe.findall(text):
-			if not word.isdigit() and word.lower() not in stopWords:
+			if not hasNumbers(word) and word.lower() not in stopWords:
 				word = word.strip(string.punctuation)
 				yield(word.lower(),1)
 
