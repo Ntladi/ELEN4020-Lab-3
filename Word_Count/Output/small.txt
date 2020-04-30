@@ -1,4 +1,4 @@
-The process took 1.8383138179779053 seconds
+The process took 1.8462605476379395 seconds
  518
 10s 2
 10th 1

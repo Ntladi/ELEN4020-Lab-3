@@ -5,6 +5,9 @@ import time
 inputFile = sys.argv[1]
 outputFile = sys.argv[2]
 
+if (os.path.isdir("./Temp/")):
+    os.system("rm -rf ./Temp/")
+
 startTime = time.time()
 os.system("python3 ./Scripts/word_count.py " + inputFile + " ./Temp/")
 endTime = time.time()
