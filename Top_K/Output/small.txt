@@ -1,5 +1,5 @@
-The proccess took 2.954484462738037 seconds
------ K = 50 ------
+The proccess took 3.001145601272583 seconds
+----- K = 30 ------
 ['not', 1335]
 ['upon', 818]
 ['one', 769]
@@ -9,7 +9,6 @@ The proccess took 2.954484462738037 seconds
 ['american', 612]
 ['said', 584]
 ['government', 541]
-['', 518]
 ['holmes', 466]
 ['man', 404]
 ['time', 401]
@@ -31,22 +30,3 @@ The proccess took 2.954484462738037 seconds
 ['old', 295]
 ['south', 291]
 ['people', 290]
-['came', 287]
-['country', 277]
-['england', 275]
-['pp', 273]
-['america', 266]
-['see', 264]
-['way', 261]
-['power', 258]
-['many', 256]
-['even', 252]
-['must', 248]
-['british', 246]
-['every', 245]
-['long', 238]
-['constitution', 237]
-['us', 237]
-['west', 237]
-['can', 230]
-['national', 229]

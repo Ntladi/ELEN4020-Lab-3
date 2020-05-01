@@ -1,5 +1,4 @@
-The process took 10.656755685806274 seconds
- 1186
+The process took 10.610694885253906 seconds
 aah 1
 aaron 5
 ab 2

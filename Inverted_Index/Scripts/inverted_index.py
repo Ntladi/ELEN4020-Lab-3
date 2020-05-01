@@ -14,7 +14,7 @@ class Inverted_Index(mrs.MapReduce):
 		for word in wordRe.findall(text):
 			word = word.translate(str.maketrans("","",string.punctuation))
 			word = word.lower()
-			if not hasNumbers(word) and word not in stopWords:
+			if not hasNumbers(word) and word not in stopWords and word != "":
 				yield(word,lineNumber)
 
 	def reduce(self,word,count):

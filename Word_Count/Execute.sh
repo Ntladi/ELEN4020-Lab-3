@@ -14,11 +14,11 @@ source Environment/bin/activate
 pip install -r requirements.txt
 
 # Run MapReduce for inputs
-printf "\n\nRunning Map-Reduce for Small Inputs\n\n"
+printf "\n\nRunning Map-Reduce for the Small Input\n\n"
 python3 ./Scripts/run_word_count.py ./Input/small.txt ./Output/small.txt
-printf "\n\nRunning Map-Reduce for Large Inputs\n\n"
+printf "\n\nRunning Map-Reduce for the Large Input\n\n"
 python3 ./Scripts/run_word_count.py ./Input/large.txt ./Output/large.txt
-printf "\n\nRunning Map-Reduce for Very Large Inputs\n\n"
+printf "\n\nRunning Map-Reduce for the Very Large Input\n\n"
 python3 ./Scripts/run_word_count.py ./Input/very_large.txt ./Output/very_large.txt
 # Delete the virtual environment and cache files
 rm -rf Environment

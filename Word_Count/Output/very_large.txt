@@ -1,5 +1,4 @@
-The process took 45.03168845176697 seconds
- 20543
+The process took 43.98016548156738 seconds
 aa 200
 aaa 28
 aaaa 1

@@ -1,5 +1,4 @@
-The process took 2.8703250885009766 seconds
- 518
+The process took 2.9116506576538086 seconds
 aaron 2
 abandon 5
 abandoned 14

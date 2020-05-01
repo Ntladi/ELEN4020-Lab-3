@@ -1,6 +1,5 @@
-The proccess took 45.44130325317383 seconds
------ K = 10 ------
-['', 20543]
+The proccess took 45.3508198261261 seconds
+----- K = 30 ------
 ['not', 20448]
 ['one', 14804]
 ['also', 13442]
@@ -10,3 +9,24 @@ The proccess took 45.44130325317383 seconds
 ['first', 8602]
 ['two', 7982]
 ['may', 7587]
+['time', 7310]
+['new', 6637]
+['however', 6633]
+['no', 6501]
+['will', 6238]
+['use', 5676]
+['often', 5586]
+['years', 5009]
+['called', 4975]
+['people', 4965]
+['world', 4504]
+['number', 4462]
+['known', 4363]
+['system', 4320]
+['even', 4232]
+['made', 4196]
+['name', 4047]
+['example', 4038]
+['since', 4030]
+['although', 3800]
+['much', 3753]

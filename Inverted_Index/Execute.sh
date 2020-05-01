@@ -14,12 +14,12 @@ source Environment/bin/activate
 pip install -r requirements.txt
 
 # Run Top K Query for inputs
-printf "\n\nRunning Inverted Index for Small Inputs\n\n"
-python3 ./Scripts/run_inverted_index.py ./Input/small.txt ./Output/small.txt
-printf "\n\nRunning Inverted Index for Large Inputs\n\n"
-python3 ./Scripts/run_inverted_index.py ./Input/large.txt ./Output/large.txt
-printf "\n\nRunning Inverted Index for Very Large Inputs\n\n"
-python3 ./Scripts/run_inverted_index.py ./Input/very_large.txt ./Output/very_large.txt
+printf "\n\nRunning Inverted Index for the Small Input\n\n"
+python3 ./Scripts/run_inverted_index.py ./Input/small.txt ./Output/small.txt 30
+printf "\n\nRunning Inverted Index for the Large Input\n\n"
+python3 ./Scripts/run_inverted_index.py ./Input/large.txt ./Output/large.txt 30
+printf "\n\nRunning Inverted Index for the Very Large Input\n\n"
+python3 ./Scripts/run_inverted_index.py ./Input/very_large.txt ./Output/very_large.txt 30
 # Delete the virtual environment and cache files
 rm -rf Environment
 rm -rf ./Scripts/__pycache__

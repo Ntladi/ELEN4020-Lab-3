@@ -4,6 +4,7 @@ import time
 
 inputFile = sys.argv[1]
 outputFile = sys.argv[2]
+indexes = sys.argv[3]
 
 def get_key_and_line_numbers(wordData):
 	firstBracket = wordData.find("(")
@@ -29,8 +30,8 @@ for wordData in words:
 endTime = time.time()
 totalTime = (endTime - startTime)
 output.write("The process took " + str(totalTime) + " seconds\n")
-for distinct_word in wordsWithLineNumbers[:50]:
+output.write("The first " + indexes + " alphebetical words\n")
+for distinct_word in wordsWithLineNumbers[:int(indexes)]:
 	output.write(distinct_word[0] + " " + distinct_word[1] + "\n")
-
 file.close()
 output.close()
