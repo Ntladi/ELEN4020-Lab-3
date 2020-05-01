@@ -13,13 +13,13 @@ printf "\n\nStarting Virtual Environment\n\n"
 source Environment/bin/activate
 pip install -r requirements.txt
 
-# Run Top K Query for inputs
-printf "\n\nRunning Top 30 query for Small Inputs\n\n"
-python3 ./Scripts/run_top_k_query.py ./Input/small.txt ./Output/small.txt 30
-printf "\n\nRunning Top 20 query for Large Inputs\n\n"
-python3 ./Scripts/run_top_k_query.py ./Input/large.txt ./Output/large.txt 20
-printf "\n\nRunning Top 10 query for Very Large Inputs\n\n"
-python3 ./Scripts/run_top_k_query.py ./Input/very_large.txt ./Output/very_large.txt 10
+# Run MapReduce for inputs
+printf "\n\nRunning Map-Reduce for Small Inputs\n\n"
+python3 ./Scripts/run_word_count.py ./Input/small.txt ./Output/small.txt
+printf "\n\nRunning Map-Reduce for Large Inputs\n\n"
+python3 ./Scripts/run_word_count.py ./Input/large.txt ./Output/large.txt
+printf "\n\nRunning Map-Reduce for Very Large Inputs\n\n"
+python3 ./Scripts/run_word_count.py ./Input/very_large.txt ./Output/very_large.txt
 # Delete the virtual environment and cache files
 rm -rf Environment
 rm -rf ./Scripts/__pycache__
