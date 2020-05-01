@@ -14,8 +14,8 @@ class Word_Count(mrs.MapReduce):
 		for word in wordRe.findall(text):
 			word = word.translate(str.maketrans("","",string.punctuation))
 			word = word.lower()
-			if not hasNumbers(word) and word.lower() not in stopWords:
-				yield(word.lower(),1)
+			if not hasNumbers(word) and word not in stopWords:
+				yield(word,1)
 
 	def reduce(self,word,count):
 		yield sum(count)
