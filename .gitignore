@@ -12,5 +12,6 @@
 *.DS_Store
 
 # File names #
-Server/__pycache__/
-Client/__pycache__/
+Word_Count/Scripts/__pycache__/
+Top_K/Scripts/__pycache__/
+Inverted_Index/Scripts/__pycache__/
