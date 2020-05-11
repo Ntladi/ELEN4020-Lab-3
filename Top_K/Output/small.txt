@@ -1,5 +1,5 @@
-The proccess took 3.001145601272583 seconds
------ K = 30 ------
+The proccess took 3.0122122764587402 seconds
+----- K = 20 ------
 ['not', 1335]
 ['upon', 818]
 ['one', 769]
@@ -20,13 +20,3 @@ The proccess took 3.001145601272583 seconds
 ['great', 352]
 ['two', 351]
 ['united', 349]
-['little', 348]
-['years', 339]
-['now', 331]
-['mr', 324]
-['first', 320]
-['men', 311]
-['may', 302]
-['old', 295]
-['south', 291]
-['people', 290]

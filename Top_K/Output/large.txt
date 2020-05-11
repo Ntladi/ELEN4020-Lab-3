@@ -1,5 +1,5 @@
-The proccess took 10.799332618713379 seconds
------ K = 30 ------
+The proccess took 10.641611814498901 seconds
+----- K = 20 ------
 ['not', 6626]
 ['said', 3464]
 ['one', 3307]
@@ -20,13 +20,3 @@ The proccess took 10.799332618713379 seconds
 ['upon', 1111]
 ['see', 1101]
 ['natasha', 1097]
-['like', 1080]
-['andrew', 1074]
-['french', 1070]
-['know', 1048]
-['without', 1015]
-['went', 1008]
-['made', 1007]
-['little', 1001]
-['long', 991]
-['states', 983]
