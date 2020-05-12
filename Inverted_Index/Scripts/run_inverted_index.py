@@ -5,6 +5,17 @@ import time
 inputFile = sys.argv[1]
 outputFile = sys.argv[2]
 indexes = sys.argv[3]
+linesToCount = int(sys.argv[4])
+
+def compare_by_occurence(wordsWithLineNumbers):
+	# This function sorts a list in decending order
+	return len(wordsWithLineNumbers[1].split(","))
+
+def sort_words(wordsWithLineNumbers):
+	# This method sorts the list of words in decending order and returns the result
+	# as a key value pair
+	allWordsWithLineNumbers = sorted(wordsWithLineNumbers, key = compare_by_occurence, reverse = True)
+	return allWordsWithLineNumbers
 
 def get_key_and_line_numbers(wordData):
 	firstBracket = wordData.find("(")
@@ -28,10 +39,17 @@ for wordData in words:
 	wordsWithLineNumbers.append([word,lineNumbers])
 
 endTime = time.time()
+allWordsWithLineNumbers = sort_words(wordsWithLineNumbers)
 totalTime = (endTime - startTime)
-output.write("The process took " + str(totalTime) + " seconds\n")
-output.write("The first " + indexes + " alphebetical words\n")
-for distinct_word in wordsWithLineNumbers[:int(indexes)]:
-	output.write(distinct_word[0] + " " + distinct_word[1] + "\n")
+output.write("The process (Including sorting the list) took" + str(totalTime) + " seconds\n")
+output.write("The first " + str(linesToCount) + " line numbers of the top " + indexes + " words:\n")
+for distinct_word in allWordsWithLineNumbers[:int(indexes)]:
+	word = distinct_word[0]
+	lines = distinct_word[1].split(",")
+	length = linesToCount
+	if (len(lines) < linesToCount):
+		length = len(lines)
+	lines = ",".join(lines[:length])
+	output.write(distinct_word[0] + " " + lines + "]\n\n")
 file.close()
 output.close()
