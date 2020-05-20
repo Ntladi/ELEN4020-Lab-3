@@ -21,6 +21,7 @@ python3 ./Scripts/run_word_count.py ./Input/large.txt ./Output/large.txt
 printf "\n\nRunning Map-Reduce for the Very Large Input\n\n"
 python3 ./Scripts/run_word_count.py ./Input/very_large.txt ./Output/very_large.txt
 # Delete the virtual environment and cache files
+deactivate
 rm -rf Environment
 rm -rf ./Scripts/__pycache__
 rm -rf Temp

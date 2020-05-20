@@ -21,6 +21,7 @@ python3 ./Scripts/run_top_k_query.py ./Input/large.txt ./Output/large.txt 20
 printf "\n\nRunning Top 20 query for the Very Large Input\n\n"
 python3 ./Scripts/run_top_k_query.py ./Input/very_large.txt ./Output/very_large.txt 20
 # Delete the virtual environment and cache files
+deactivate
 rm -rf Environment
 rm -rf ./Scripts/__pycache__
 rm -rf Temp
